@@ -46,3 +46,14 @@ export const getMovieReview = async (movieId) => {
         console.log(error);
     }
 };
+
+export const getSearchMovie = async (query) => {
+  const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${query}&page=1&include_adult=false`;
+
+  try {
+    const response = await axios.get(url);
+    return response.data.results;
+  } catch (error) {
+    console.log(error);
+  }
+};
