@@ -35,7 +35,7 @@ const MovieDetalies = () => {
     return movieReleaseDate = 'Unknown';
   }
     return (
-      <main>
+      <Box as='main' pl={3} pt={0}>
         <Link
         to={location.pathname.includes('movies')
             ? `${location.state.from.pathname}${location.state.from.search}`
@@ -88,7 +88,7 @@ const MovieDetalies = () => {
           <Outlet />
         </Suspense>  
     
-        </main>
+        </Box>
     );
 };
 

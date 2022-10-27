@@ -3,7 +3,7 @@ import { MovieList } from "components/MovieList";
 
 const Home = () => {
     return (
-        <Box as='main'>
+        <Box as='main' pl={3}>
             <h1>Trending today</h1>
             <MovieList />
         </Box>

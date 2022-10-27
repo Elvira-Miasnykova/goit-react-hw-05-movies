@@ -14,7 +14,7 @@ export const MovieList = () => {
     return (
         <>
             {movieList && (
-                <Box as='ul'>
+                <Box as='ul' m={0} pl={3}>
                 {movieList.map(({ id, title }) => {
                     return (
                     <li key={id}>
