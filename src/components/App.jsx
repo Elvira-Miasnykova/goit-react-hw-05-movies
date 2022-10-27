@@ -1,11 +1,7 @@
 import { Navigate, Route, Routes} from "react-router-dom";
-// import { Home } from "pages/Home";
 import { Movies } from "pages/Movies";
-//import { MovieDetalies } from "pages/MovieDetalies";
 //import { NotFound } from "pages/NotFound";
 import { Layout } from "./Layout";
-//import { Cast } from "./Cast/Cast";
-//import { Review } from "./Review/Review";
 import { lazy } from "react";
 //import { Link } from './App.styled';
 

@@ -18,7 +18,7 @@ export const Movies = () => {
     }
     setSearchParams({ query });
     getSearchMovie(query).then(setmovieList);
-  }, [query]);
+  }, [query, setSearchParams]);
 
 
   const handleChange = e => {
