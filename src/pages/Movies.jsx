@@ -1,7 +1,5 @@
 import { Box } from 'Box';
 import { useEffect } from 'react';
-//import { MovieSearchList } from 'components/SearchMovie/SearchMovie';
-
 import { useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { getSearchMovie } from 'services/movieApi';

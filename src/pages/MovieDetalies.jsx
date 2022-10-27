@@ -3,8 +3,9 @@ import { useParams, Outlet, useLocation } from "react-router-dom";
 import { getMovieId } from "services/movieApi";
 import { Box } from "Box";
 import { Link } from "react-router-dom";
+import { Suspense } from "react";
 
-export const MovieDetalies = () => {
+const MovieDetalies = () => {
     const [movieDetalies, setMovieDetalies] = useState(null);
     const {movieId} = useParams();
     const location = useLocation();
@@ -66,7 +67,8 @@ export const MovieDetalies = () => {
             Genres
           </Box>
             <p>{genreList}</p>
-          </Box>
+
+        </Box>
       </Box>
 
       <p>Additional information</p>
@@ -81,9 +83,13 @@ export const MovieDetalies = () => {
             Reviews
           </Link>
         </li> 
-      </Box>
-      <Outlet />
+        </Box>
+        <Suspense>
+          <Outlet />
+        </Suspense>  
     
         </main>
     );
 };
+
+export default MovieDetalies;

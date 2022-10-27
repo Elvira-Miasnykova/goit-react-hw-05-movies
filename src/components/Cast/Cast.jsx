@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { getMovieCredits } from "services/movieApi";
 
-export const Cast = () => {
+const Cast = () => {
     const [movieCredits, setMovieCredits] = useState(null);
     const { movieId } = useParams();
     
@@ -35,3 +35,5 @@ export const Cast = () => {
         </Box>
     );
 };
+
+export default Cast;
