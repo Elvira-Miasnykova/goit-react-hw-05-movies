@@ -1,5 +1,5 @@
 import { Box } from "Box";
-import { MovieList } from "components/MovieList";
+import { MovieList } from "components/MovieList/MovieList";
 
 const Home = () => {
     return (

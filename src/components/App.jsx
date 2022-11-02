@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes} from "react-router-dom";
 import { Movies } from "pages/Movies";
 //import { NotFound } from "pages/NotFound";
-import { Layout } from "./Layout";
+import { Layout } from "./Layout/Layout";
 import { lazy } from "react";
 //import { Link } from './App.styled';
 

@@ -12,11 +12,13 @@ export const Movies = () => {
     const [inputSearch, setInputSearch] = useState(query);
     const location = useLocation();
     
+    
       useEffect(() => {
     if (query.trim() === '') {
       return;
     }
-    setSearchParams({ query });
+       // setSearchParams({ query });
+    
     getSearchMovie(query).then(setmovieList);
   }, [query, setSearchParams]);
 
